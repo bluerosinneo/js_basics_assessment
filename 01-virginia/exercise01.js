@@ -16,4 +16,29 @@
 
     //your code here
 
+    // washingtonInfo
+
+    // want to find number of Virginia
+
+    let virginiaVar = "Virginia";
+    // let lengthOfVirginia = virginiaVar.length;
+    // let lengthOfCrazy = washingtonInfo.length;
+    let counterOfVirginias = 0;
+    let stringLocation = 0;
+
+    while(washingtonInfo.indexOf(virginiaVar, stringLocation) > 0){
+        if(washingtonInfo.indexOf(virginiaVar, stringLocation)){
+            counterOfVirginias = counterOfVirginias + 1;
+            stringLocation = washingtonInfo.indexOf(virginiaVar, stringLocation)
+        }
+        stringLocation = stringLocation + 1;
+    }
+
+    console.log(counterOfVirginias);
+
+
+
+    
+
+
 })();

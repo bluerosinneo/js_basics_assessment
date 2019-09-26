@@ -11,7 +11,15 @@
 
     //your code here
 
-    writeAscii(artArray);
+    let tempArray = [];
+
+    for(let i = 0; i < artArray.length; i++){
+        if(artArray[i].indexOf("lollollol") == -1){
+            tempArray.push(artArray[i]);
+        }
+    }
+
+    writeAscii(tempArray);
 
 })();
 

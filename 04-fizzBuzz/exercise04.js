@@ -24,5 +24,29 @@
      */
 
     //your code here
+    function fizzBuzz(maxValue){
+        let resultString = "";
+        for(let i = 1; i <= maxValue; i++){
+            let multTwo = (i%2 == 0);
+            let multThree = (i%3 == 0);
+
+            if( (multTwo == true) && (multThree == true) ){
+                resultString = resultString + "FizzBuzz, ";
+            }
+            else if(multTwo == true){
+                resultString = resultString + "Fizz, ";
+            }
+            else if(multThree == true){
+                resultString = resultString + "Buzz, ";
+            }
+            else{
+                resultString = resultString + i + ", ";
+            }
+
+        }
+        return resultString;
+    }
+    
+    console.log(fizzBuzz(12));
 
 })();

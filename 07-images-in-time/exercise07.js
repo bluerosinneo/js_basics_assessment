@@ -20,10 +20,12 @@
    */
 
 
-  /**
+  /*
    * this function adds an image to the page
    * @param {String} name an image filename
    */
+
+
   function addImage(name) {
     var img = document.createElement('img');
     img.src = name;
@@ -31,5 +33,32 @@
   }
 
   //your code here
+  let imageStringArray = [
+    "cats.jpg",
+    "hugger.jpg",
+    "internet.jpg",
+    "jackson.jpg",
+    "washington.jpg"
+  ]
+
+  // imageStringArray[Math.random()*imageStringArray.length]
+
+  // setTimeout(function(){
+  //   console.log("hey");
+  //   let randomNumber = Math.floor(Math.random()*imageStringArray.length);
+  //   addImage(imageStringArray[randomNumber]);
+  // },2500);
+
+  // try calling a setTimeout from a function that calls the function
+  // after the timeout
+
+  function funTimes(){
+    console.log("hey");
+    let randomNumber = Math.floor(Math.random()*imageStringArray.length);
+    addImage(imageStringArray[randomNumber]);
+    setTimeout(funTimes,2500);
+  }
+
+  setTimeout(funTimes,2500);
 
 })();

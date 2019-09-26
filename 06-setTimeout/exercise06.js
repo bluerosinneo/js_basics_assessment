@@ -1,5 +1,5 @@
 (function(){
-
+    window.onload = function(){
 
 /** 
  * Use javascript to target update the contents of the heading with the id of title in index.html
@@ -14,6 +14,15 @@
  */
 
 //your code here
+        
+        // let helloThing = document.querySelector("#title");
 
+        // function changeThing(){
+        //     document.querySelector("#title").innerHTML = "Goodbye World.";
+        // }
+
+        setTimeout(function(){document.querySelector("#title").innerHTML = "Goodbye World.";},3000);
+
+    };
 })();
     
